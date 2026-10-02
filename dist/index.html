@@ -1,82 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#075c63">
-    <meta name="description" content="iYosi helps adults explore reported smoking areas in Metro Manila, with clear verification and freshness information.">
-    <title>iYosi — Find a place with the full picture</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23075c63'/%3E%3Cpath fill='white' fill-rule='evenodd' d='M32 10a21 21 0 0 0-21 21c0 16 21 28 21 28s21-12 21-28A21 21 0 0 0 32 10Zm0 11a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="#top" aria-label="iYosi home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="16" fill="#0c8585"/><path fill="#fff" fill-rule="evenodd" d="M32 10a21 21 0 0 0-21 21c0 16 21 28 21 28s21-12 21-28A21 21 0 0 0 32 10Zm0 11a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/></svg><span>iYosi</span></a>
-        <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#try-it">Try the preview</a><a class="nav-download" href="#download">Get the app <span aria-hidden="true">↗</span></a></nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="iYosi is building a clearer guide to designated smoking areas and community reports in Metro Manila. Explore how evidence status, recent confirmations, and access notes could help you decide before you go.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="iYosi — Find the place. Check the status.">
+  <meta property="og:description" content="A clearer guide to designated smoking areas and community reports in Metro Manila. Explore the sample preview.">
+  <meta property="og:url" content="https://iyosi.app/">
+  <meta property="og:image" content="https://iyosi.app/assets/city-guide-illustration.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://iyosi.app/">
+  <title>iYosi — Find the place. Check the status.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="notice-bar"><span>iYosi / METRO MANILA</span><span>PUBLIC RELEASE IN PREPARATION</span></div>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="iYosi home"><span class="brand-pin" aria-hidden="true"><span></span></span><span>iYosi<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#preview">App preview</a><a class="nav-last" href="#roadmap">Release plans <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> A METRO MANILA PLACE GUIDE · IN DEVELOPMENT</p>
+          <h1 id="hero-heading">Find the place.<br><em>Check the status.</em></h1>
+          <p class="hero-lede">iYosi is building a map of designated smoking areas and community reports. See what has been reviewed, when it was last confirmed, and how to reach the entrance—before making the trip.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#preview">Explore the sample preview <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#roadmap">See development status <span aria-hidden="true">↗</span></a></div>
+          <p class="hero-footnote"><span class="footnote-dot" aria-hidden="true"></span> Preview uses sample places. No app download yet.</p>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a city block and a sample evidence status card">
+          <div class="art-image" role="img" aria-label="Editorial illustration of a fictional Metro Manila inspired neighborhood block"></div>
+          <div class="art-caption"><span>THE BLOCK, WITH CONTEXT.</span><span>ILLUSTRATIVE SCENE</span></div>
+          <div class="art-sticker" aria-hidden="true"><span>PLACE</span><strong>✳</strong><span>STATUS</span></div>
+          <div class="float-card"><div class="float-top"><span class="float-badge"><i></i> EVIDENCE REVIEWED</span><span class="float-arrow">↗</span></div><strong>Sample designated area</strong><small>Public designated area · illustrative</small><div class="float-rule"></div><span class="float-meta">Last confirmed <b>Sample date</b></span></div>
+        </div>
       </div>
-    </header>
+      <div class="wrap hero-index"><span>01 / A MAP WITH MORE THAN PINS</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
 
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span> A clearer guide to Metro Manila</p>
-            <h1 id="hero-title">Know more before you <em>go.</em></h1>
-            <p class="hero-lede">iYosi is an early idea for finding reported smoking areas with the context that matters: what has been reviewed, what the community has observed, and how current the information is.</p>
-            <div class="hero-actions"><a class="button button-primary" href="#try-it">Explore the preview <span aria-hidden="true">↗</span></a><a class="text-link" href="#download">App availability <span aria-hidden="true">↓</span></a></div>
-            <p class="hero-note"><span aria-hidden="true">✳</span> Designed for browsing without sign-in or location sharing.</p>
-          </div>
-          <div class="hero-visual" aria-label="Preview of iYosi place information">
-            <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
-            <div class="phone">
-              <div class="phone-top"><span>9:41</span><span class="phone-camera" aria-hidden="true"></span><span class="phone-signal" aria-hidden="true">▰▰▰</span></div>
-              <div class="phone-app-head"><span class="phone-brand">iYosi</span><span class="phone-location">Metro Manila <span aria-hidden="true">⌄</span></span></div>
-              <div class="phone-search"><span aria-hidden="true">⌕</span> Search an area or landmark</div>
-              <div class="phone-preview-label">EXPLORE PLACES <span>ILLUSTRATIVE</span></div>
-              <div class="phone-tabs"><span class="phone-tab-active">All places</span><span>Designated</span><span>Community</span></div>
-              <div class="phone-place"><div class="phone-place-top"><span class="place-symbol" aria-hidden="true">✓</span><div><strong>Sample designated area</strong><small>Public designated area</small></div></div><span class="status-pill status-verified">✓ Evidence reviewed</span><p>Check the access note and latest confirmation before heading out.</p></div>
-              <div class="phone-place phone-place-second"><div class="phone-place-top"><span class="place-symbol place-symbol-reported" aria-hidden="true">○</span><div><strong>Sample outdoor report</strong><small>Community outdoor spot</small></div></div><span class="status-pill status-reported">○ Unverified report</span><p>A report does not establish permission.</p></div>
-              <div class="phone-bottom" aria-hidden="true"></div>
-            </div>
-            <div class="floating-label"><span class="floating-check" aria-hidden="true">✓</span><span><strong>Know what’s verified</strong><small>Before you make the trip</small></span></div>
-          </div>
-        </div>
-      </section>
+    <section class="principle" id="how" aria-labelledby="principle-heading">
+      <div class="wrap principle-grid"><div><p class="eyebrow dark">THE IDEA</p><h2 id="principle-heading">A pin should tell you <em>more.</em></h2></div><div class="principle-copy"><p>Finding a place is only the first step. The useful part is understanding what kind of place it is, how strong the information is, and whether anyone has checked it recently.</p><div class="principle-tags"><span><i class="tag-icon teal">✓</i> Place type</span><span><i class="tag-icon blue">◷</i> Latest check</span><span><i class="tag-icon orange">↗</i> Access note</span></div></div></div>
+      <div class="wrap steps"><article><span class="step-no">01 / FIND</span><div class="step-icon">⌕</div><h3>Search the area.</h3><p>Browse by neighborhood or landmark. Your location stays optional.</p></article><article><span class="step-no">02 / READ</span><div class="step-icon">◎</div><h3>Know the status.</h3><p>Evidence-reviewed designations and unverified reports get different labels.</p></article><article><span class="step-no">03 / CHECK</span><div class="step-icon">↗</div><h3>See the way in.</h3><p>Read the entrance note, last confirmation, and any warning before directions.</p></article></div>
+    </section>
 
-      <section class="intro section-pad" id="how-it-works" aria-labelledby="intro-title">
-        <div class="shell">
-          <div class="section-heading"><p class="eyebrow dark">THE IDEA</p><h2 id="intro-title">A pin should tell you <em>more.</em></h2><p>The goal is to separate place type, evidence review, and recent community observations so every pin has context.</p></div>
-          <div class="feature-grid">
-            <article class="feature"><div class="feature-number">01 / FIND</div><div class="feature-icon" aria-hidden="true">⌕</div><h3>Start with the area</h3><p>Search a landmark or browse the Metro Manila map. Location access is optional.</p></article>
-            <article class="feature"><div class="feature-number">02 / CHECK</div><div class="feature-icon" aria-hidden="true">✓</div><h3>Read the status</h3><p>See whether designation was evidence reviewed, community reported, or disputed.</p></article>
-            <article class="feature"><div class="feature-number">03 / CONTRIBUTE</div><div class="feature-icon" aria-hidden="true">↗</div><h3>Keep it current</h3><p>Confirm a place, suggest a correction, or report an issue for review.</p></article>
-          </div>
-        </div>
-      </section>
+    <section class="preview" id="preview" aria-labelledby="preview-heading">
+      <div class="wrap preview-heading"><div><p class="eyebrow light">FROM LANDING PAGE TO APP</p><h2 id="preview-heading">One visual language.<br><em>Every place, in context.</em></h2></div><p>Try two sample states. Labels, shape, and wording change together, so the difference is clear beyond color alone.</p></div>
+      <div class="wrap demo-grid">
+        <div class="demo-explainer"><span class="small-label">02 / THE APP EXPERIENCE</span><h3>The status leads.<br><em>The map follows.</em></h3><p>A place card puts the evidence status, latest check, and access note first, before anyone considers directions. A community report never reads like a designated area.</p><div class="state-switch" role="group" aria-label="Choose sample place"><button type="button" class="active" data-state="designated" aria-pressed="true"><span class="switch-icon teal">✓</span> Designated area</button><button type="button" data-state="community" aria-pressed="false"><span class="switch-icon amber">◇</span> Community report</button></div><p class="sample-note">Illustrative interface · fictional sample data</p></div>
+        <div class="phone-stage"><div class="stage-grid" aria-hidden="true"></div><div class="phone" aria-label="Illustrative iYosi app screen"><div class="phone-status"><span>9:41</span><span>●●● ▰</span></div><div class="phone-head"><div class="phone-logo">iYosi<span>.</span></div><div class="phone-loc"><span>⌖</span> Metro Manila <span>⌄</span></div></div><div class="phone-search"><span>⌕</span> Search an area or landmark</div><div class="phone-map"><div class="map-label m1">SAMPLE DISTRICT</div><div class="map-label m2">PLACE PREVIEW</div><div class="road horizontal"></div><div class="road diagonal"></div><div class="road vertical"></div><div class="block b1"></div><div class="block b2"></div><div class="block b3"></div><div class="block b4"></div><div class="map-pin secondary">◇</div><div class="map-pin primary" id="map-pin">✓</div><div class="map-key">ILLUSTRATIVE MAP · NOT FOR NAVIGATION</div></div><div class="phone-card" aria-live="polite"><div class="card-handle"></div><div class="card-top"><span class="card-eyebrow">SAMPLE PLACE / 01</span><span class="card-save">☆</span></div><h4 id="place-name">Sample designated area</h4><p class="place-type" id="place-type">Public designated area</p><span class="status-chip verified" id="place-status">✓ &nbsp; Evidence reviewed</span><div class="card-facts"><div><span class="fact-icon">◷</span><span><small>LAST CONFIRMATION</small><strong id="place-date">Sample date</strong></span></div><div><span class="fact-icon">↗</span><span><small>ACCESS NOTE</small><strong id="place-access">Check posted signs and the current entrance.</strong></span></div></div><div class="card-action" id="card-action">View place details <span>↗</span></div></div><div class="phone-home"></div></div><div class="stage-side-label">APP SCREEN / SAMPLE</div></div>
+      </div>
+      <div class="wrap preview-bottom"><span>THE SAME DESIGN SYSTEM IN BOTH PLACES</span><span>TYPE · STATUS · FRESHNESS · ACCESS</span></div>
+    </section>
 
-      <section class="playground section-pad" id="try-it" aria-labelledby="playground-title">
-        <div class="shell">
-          <div class="section-heading playground-heading"><div><p class="eyebrow dark">INTERACTIVE PREVIEW</p><h2 id="playground-title">Get a feel for <em>iYosi.</em></h2></div><p>Explore how different place reports appear. These are illustrative examples, not live locations or directions.</p></div>
-          <div class="demo" aria-label="Interactive sample place explorer">
-            <div class="demo-list-panel">
-              <div class="demo-toolbar"><div><strong>Explore places</strong><span>Metro Manila · sample data</span></div><span class="demo-count" id="result-count" aria-live="polite"></span></div>
-              <label class="demo-search"><span class="sr-only">Search sample places</span><span aria-hidden="true">⌕</span><input id="place-search" type="search" placeholder="Search sample places" autocomplete="off"></label>
-              <div class="filter-list" role="group" aria-label="Filter sample places"><button class="filter active" type="button" data-filter="all" aria-pressed="true">All places</button><button class="filter" type="button" data-filter="designated" aria-pressed="false">Designated</button><button class="filter" type="button" data-filter="community" aria-pressed="false">Community</button><button class="filter" type="button" data-filter="claim" aria-pressed="false">Claims</button></div>
-              <div class="place-list" id="place-list"></div>
-            </div>
-            <div class="demo-detail" id="place-detail" aria-live="polite"></div>
-          </div>
-          <p class="demo-disclaimer"><span aria-hidden="true">ⓘ</span> This preview shows sample content only. A pin or rating never guarantees that smoking is permitted; follow local and property rules.</p>
-        </div>
-      </section>
+    <section class="clarity" aria-labelledby="clarity-heading"><div class="wrap clarity-grid"><div><p class="eyebrow dark">CLEAR BY DESIGN</p><h2 id="clarity-heading">Different reports.<br><em>Different signals.</em></h2><p>Evidence review helps explain a record; it is not official certification. Always follow local and property rules and respect shared air.</p></div><div class="signal-list"><div class="signal"><span class="signal-symbol verified">✓</span><div><strong>Evidence-reviewed designation</strong><p>A designation with supporting evidence reviewed by the iYosi team.</p></div></div><div class="signal"><span class="signal-symbol reported">◇</span><div><strong>Community report</strong><p>An observation awaiting review. It does not establish permission.</p></div></div><div class="signal"><span class="signal-symbol warning">!</span><div><strong>Disputed or closed</strong><p>A prominent warning before anyone considers a route.</p></div></div></div></div></section>
 
-      <section class="download section-pad" id="download" aria-labelledby="download-title">
-        <div class="shell download-inner"><div><p class="eyebrow">EARLY DEVELOPMENT</p><h2 id="download-title">The city, with more <em>context.</em></h2><p>There is a rudimentary iOS prototype. The API is being built, and Android is planned. Store links will appear here once releases are ready.</p></div><div class="store-actions"><a class="store-button" id="android-link" aria-disabled="true"><span class="store-icon" aria-hidden="true">▶</span><span><small>Android · planned</small><strong>No download yet</strong></span></a><a class="store-button" id="ios-link" aria-disabled="true"><span class="store-icon apple" aria-hidden="true">●</span><span><small>iPhone · prototype</small><strong>No download yet</strong></span></a></div></div>
-      </section>
-    </main>
-    <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="16" fill="#0c8585"/><path fill="#fff" fill-rule="evenodd" d="M32 10a21 21 0 0 0-21 21c0 16 21 28 21 28s21-12 21-28A21 21 0 0 0 32 10Zm0 11a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/></svg><span>iYosi</span></a><p>Built for clearer information and shared air. For adults 18+.</p><span>© 2026 Orca Solutions</span></div></footer>
-  </body>
+    <section class="roadmap" id="roadmap" aria-labelledby="roadmap-heading"><div class="wrap roadmap-grid"><div><p class="eyebrow light">RELEASE PLANS</p><h2 id="roadmap-heading">The next stop is <em>getting it ready.</em></h2><p>The shared API is implemented, an iOS pilot runs in a simulator, and an Android pilot client is in development. Public release work remains, with Android planned first. Neither app is available in the stores yet.</p></div><div class="release-column"><div class="roadmap-list"><div><span>01</span><strong>Shared API</strong><em>Pilot implementation</em></div><div><span>02</span><strong>Android</strong><em>First public release planned</em></div><div><span>03</span><strong>iOS</strong><em>Pilot app</em></div></div><div class="store-links" aria-label="App download availability"><a id="android-link" class="store-link" aria-disabled="true"><span>Android <small>Google Play</small></span><strong>Download pending ↗</strong></a><a id="ios-link" class="store-link" aria-disabled="true"><span>iOS <small>App Store</small></span><strong>Download pending ↗</strong></a></div></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-pin" aria-hidden="true"><span></span></span><span>iYosi<span class="brand-dot">.</span></span></a><p>Clearer information. Consideration for shared air.<br>For adults 18+.</p><span>© 2026 Orca Solutions</span></div></footer>
+</body>
 </html>

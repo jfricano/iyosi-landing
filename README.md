@@ -1,6 +1,6 @@
 # iYosi landing page
 
-A standalone, single-page site for the iYosi app. It is a static site with no build step or dependencies.
+A responsive, single-page static site for iYosi. GitHub Pages publishes the contents of `dist/` through `.github/workflows/pages.yml`. There is no build step or runtime dependency.
 
 ## Project repositories
 
@@ -15,14 +15,16 @@ The iYosi code currently lives in four focused repositories:
 
 ## Preview locally
 
-From this folder, run `python3 -m http.server 8008 --directory dist` and open `http://localhost:8008`.
+From this repository, run `python3 -m http.server 8008 --directory dist` and open `http://localhost:8008/`.
 
-## Store links
+The app screen is an interactive **illustration** with fictional sample places. Its two state buttons change the place label, evidence status, latest confirmation, access note, and map symbol. It does not use the API or provide directions to real places.
 
-When the apps are published, update `STORE_URLS` near the top of `dist/app.js` with the Google Play and App Store URLs. Buttons remain visibly unavailable until their URL is set.
+## Release information
 
-The interactive preview uses illustrative sample places. It does not connect to the iYosi API or present real locations.
+The page describes the current pilot state. Update the release copy as the API and clients change. When public app listings are ready, set the HTTPS URLs in `STORE_URLS` at the top of `dist/app.js`; the Android and iOS cards remain non-links until those URLs are present.
 
-## GitHub Pages
+The custom domain is `iyosi.app` (`dist/CNAME`). Public metadata and social preview links use that domain.
 
-The workflow in `.github/workflows/pages.yml` publishes `dist/` when `main` is pushed to GitHub. In repository **Settings → Pages**, select **GitHub Actions** as the source. The site is served from `https://jfricano.github.io/iyosi-landing/`.
+## Design handoff
+
+[docs/DESIGN_HANDOFF.md](docs/DESIGN_HANDOFF.md) records the visual system and app screen hierarchy for the client teams. `design-preview/` preserves the approved concept; `dist/` is the live site source.
