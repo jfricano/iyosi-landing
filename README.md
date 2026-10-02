@@ -8,10 +8,10 @@ The iYosi code currently lives in four focused repositories:
 
 | Repository | What it contains |
 | --- | --- |
-| [iYosi API](https://github.com/jfricano/iyosi-api) | Backend and API work in progress |
-| [iYosi iOS](https://github.com/jfricano/iyosi-ios) | Early iOS prototype |
-| [iYosi Android](https://github.com/jfricano/iyosi-android) | Android project scaffold |
-| [iYosi landing](https://github.com/jfricano/iyosi-landing) | This site and its [live preview](https://jfricano.github.io/iyosi-landing/) |
+| [iYosi API](https://github.com/jfricano/iyosi-api) | Shared API pilot implementation |
+| [iYosi iOS](https://github.com/jfricano/iyosi-ios) | iOS pilot app |
+| [iYosi Android](https://github.com/jfricano/iyosi-android) | Android pilot client in development |
+| [iYosi landing](https://github.com/jfricano/iyosi-landing) | This site at [iyosi.app](https://iyosi.app/) |
 
 ## Preview locally
 
