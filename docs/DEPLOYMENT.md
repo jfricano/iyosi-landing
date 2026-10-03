@@ -38,3 +38,5 @@ For ordinary changes, commit the static source to a branch, review it, then merg
 Restoring the old GitHub DNS records alone cannot recover the old host while this source repository remains private on the current GitHub entitlement. Returning to GitHub Pages requires a public publishing repository or an eligible paid plan, which is a separate human decision.
 
 Initial recovery evidence and the WIP manager handoff are maintained at `/Users/jasonfricano/coding/dev-ops/deployments/iyosi-landing/20261002/` during cutover. Preserve the prior immutable artifact and DNS values until Cloudflare acceptance passes.
+
+The completed migration and WIP handoff are versioned in [hosting-migration-2026-10-02.md](hosting-migration-2026-10-02.md), with [acceptance evidence](hosting-acceptance-2026-10-02.json). Shared dev-ops coordination notes remain in their existing local directory.

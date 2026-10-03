@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-10-03T04:52:52.636367+00:00",
+  "url": "https://iyosi.app/",
+  "files": [
+    {
+      "path": "CNAME",
+      "ok": true,
+      "sha256": "4a37b953530e291762a972792b5f5a4dcb01d78b931f54b63b7161dca0bc5581"
+    },
+    {
+      "path": "app.js",
+      "ok": true,
+      "sha256": "bf346ea2c8272a694bd52ee80d4365d78df519b7252497c891ce6bc7e2111748"
+    },
+    {
+      "path": "assets/city-guide-illustration.jpg",
+      "ok": true,
+      "sha256": "0b5bdd7f09e0df436e57616c2fc49bb564fe4a19ce9e0c0c67a7257c68d73a89"
+    },
+    {
+      "path": "favicon.svg",
+      "ok": true,
+      "sha256": "fae9429475e511b94c793c8c7bb253970c11ba9fc358093d72764ed67af8c893"
+    },
+    {
+      "path": "index.html",
+      "ok": true,
+      "sha256": "c6cb1d155e574c3765928a89b5b40986944cd76b78d53d76e01ab95723235969",
+      "served_path": "/"
+    },
+    {
+      "path": "styles.css",
+      "ok": true,
+      "sha256": "75ab248f4efbe958f9f7f0166f0c97fa71b2d18918a37c227d517a1206bbd3ac"
+    }
+  ],
+  "all_match": true,
+  "www_redirect": "passed: HTTP and HTTPS 301 preserving path and query",
+  "domain_status": {
+    "iyosi.app": "Active; SSL enabled",
+    "www.iyosi.app": "Active; SSL enabled"
+  },
+  "index_html_redirect": {
+    "status": 308,
+    "location": "https://iyosi.app/"
+  },
+  "production_source_commit": "8ef8ab64df16c4e2bab0c68705a94a8063b7cbf1",
+  "production_deployment_id": "e2efbfc1-ac63-4626-927b-a95cc06c3618",
+  "automatic_main_deployment": "passed after merge and direct documentation push",
+  "private_repository": true,
+  "github_installation_id": 167412069,
+  "selected_repositories": [
+    "jfricano/iyosi-landing"
+  ],
+  "interactive_preview_states": "both passed in live browser",
+  "migration_pr": "https://github.com/jfricano/iyosi-landing/pull/3",
+  "redirect_rule_id": "c6327eab8b244d19b76a8ef199d7cf41"
+}
