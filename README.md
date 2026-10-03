@@ -1,6 +1,6 @@
 # iYosi landing page
 
-A responsive, single-page static site for iYosi. GitHub Pages publishes the contents of `dist/` through `.github/workflows/pages.yml`. There is no build step or runtime dependency.
+A responsive, single-page static site for iYosi. Hosting is migrating to free Cloudflare Pages so this source repository can remain private. Pages publishes `dist/` directly; there is no build step or runtime dependency. See [deployment and recovery](docs/DEPLOYMENT.md) for configuration, release status, and rollback.
 
 ## Project repositories
 
@@ -23,7 +23,7 @@ The app screen is an interactive **illustration** with fictional sample places. 
 
 The page describes the current pilot state. Update the release copy as the API and clients change. When public app listings are ready, set the HTTPS URLs in `STORE_URLS` at the top of `dist/app.js`; the Android and iOS cards remain non-links until those URLs are present.
 
-The custom domain is `iyosi.app` (`dist/CNAME`). Public metadata and social preview links use that domain.
+The canonical custom domain is `iyosi.app`. Public metadata and social preview links use that domain. Cloudflare Pages Custom domains manages domain attachment; the legacy `dist/CNAME` file is not its configuration source.
 
 ## Design handoff
 
