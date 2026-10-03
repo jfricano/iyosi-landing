@@ -1,6 +1,6 @@
 # iYosi landing page
 
-A responsive, single-page static site for iYosi. Hosting is migrating to free Cloudflare Pages so this source repository can remain private. Pages publishes `dist/` directly; there is no build step or runtime dependency. See [deployment and recovery](docs/DEPLOYMENT.md) for configuration, release status, and rollback.
+A responsive, single-page static site for iYosi. Hosting is deployed on free Cloudflare Pages so this source repository can remain private. Pages publishes `dist/` directly; there is no build step or runtime dependency. See [deployment and recovery](docs/DEPLOYMENT.md) for configuration, release status, and rollback.
 
 ## Project repositories
 
