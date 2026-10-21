@@ -28,3 +28,7 @@ The canonical custom domain is `iyosi.app`. Public metadata and social preview l
 ## Design handoff
 
 [docs/DESIGN_HANDOFF.md](docs/DESIGN_HANDOFF.md) records the visual system and app screen hierarchy for the client teams. `design-preview/` preserves the approved concept; `dist/` is the live site source.
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright © 2026 Jason Fricano.
